@@ -1,0 +1,285 @@
+*
+{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    overflow-x: hidden;
+    display: grid;
+    place-content: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(250, 213, 219);
+}
+.wrapper
+{
+    border-radius: 1rem;
+    max-width: 900px;
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    border: 4px solid rgb(200, 200, 202);
+    background-color: white;
+}
+.head, .main, .section, .table
+{
+    border: 4px solid red;
+    border: none;
+    padding-inline: 3rem;
+}
+.head img
+{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 1.5rem;
+    margin-block: 2rem 2rem;
+}
+.head h1
+{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+.head p
+{
+    padding: .5rem;
+    line-height: 1.5;
+    margin: 1rem;
+}
+hr
+{
+    margin-block: 2rem;
+}
+/* ending of style header  */
+
+.main
+{
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+.main .preparation
+{
+    padding: 1rem 1.5rem;
+    margin-block: .4rem;
+    margin-left: 4%;
+    border-radius: .5rem;
+    background-color: rgb(245, 224, 227);
+}
+.main .preparation p
+{
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background-color: brown;
+    background-color: rgb(245, 224, 227);
+}
+.main .preparation ul
+{
+    margin-left: 4%;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.main .ingredients p
+{
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: brown;
+    font-weight: 600;
+    margin: .8rem 0 0 0;
+    margin-left: 0;
+}
+.main .ingredients ul
+{
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-left: 7%;
+}
+
+/* ending */
+
+.section p
+{
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: brown;
+    font-weight: 600;
+    margin: .8rem;
+    margin-left: 0;
+}
+.section ol
+{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 4%;
+}
+.section ol li
+{
+    margin: .8rem;
+}
+.section ol li span
+{
+    font-weight: bold;
+}
+/* ending0 */
+.table p
+{
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: brown;
+    font-weight: 600;
+    margin: .8rem;
+    margin-left: 0;
+}
+.table h2
+{
+    font-size: clamp(15px, 3vh, 16px);
+    text-align: left;
+    font-weight: 600;
+    margin: 1rem 0 1rem 0;
+}
+.table table
+{
+    width: 100%;
+    text-align: left;
+}
+.table table th, td
+{
+    padding: .5rem;
+    font-weight: normal;
+    border-bottom: 2px solid lightgray;
+}
+@media screen and (min-width: 300px) and (max-width: 500px)
+{
+.wrapper
+{
+    border-radius: 0;
+    max-width: 900px;
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    border: none;
+    background-color: whitesmoke;
+}
+.head, .main, .section, .table
+{
+    border: none;
+    padding-inline: 1rem;
+}
+.head img
+{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0;
+    margin-block: 2rem 2.5rem;
+    margin-block: 0;
+}
+.head h1
+{
+    font-size: 1.3rem;
+    margin-block: 2rem 0;
+}
+.head p
+{
+    padding: .5rem;
+    line-height: 1.5;
+}
+hr
+{
+    margin-block: 2rem;
+}
+/* ending of style header  */
+
+.main
+{
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+.main .preparation
+{
+    padding: 1rem 1.5rem;
+    margin-block: .4rem;
+    margin-left: 4%;
+    border-radius: 1rem;
+    background-color: rgb(245, 224, 227);
+}
+.main .preparation p
+{
+    color: brown;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: .6rem;
+    background-color: rgb(245, 224, 227);
+}
+.main .preparation ul
+{
+    margin-left: 1%;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.main .ingredients p
+{
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: brown;
+    font-weight: 600;
+    margin: .8rem 0 0 0;
+    margin-left: 0;
+}
+.main .ingredients ul
+{
+    font-size: .9rem;
+    line-height: 1.7;
+    margin-left: 7%;
+}
+
+/* ending */
+
+.section p
+{
+    font-size: 1.3rem;
+}
+.section ol
+{
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-left: 4%;
+}
+.section ol li
+{
+    margin: .8rem;
+}
+.section ol li span
+{
+    font-weight: bold;
+}
+/* ending0 */
+.table p
+{
+    font-size: 1.3rem;
+    line-height: 0;
+    color: brown;
+    font-weight: 600;
+    margin: 1.5rem;
+    margin-left: 0;
+}
+.table h2
+{
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    font-size: clamp(15px, 3vh, 16px);
+}
+.table table
+{
+    width: 100%;
+    text-align: left;
+}
+.table table th, td
+{
+    padding: .5rem;
+    font-weight: normal;
+    border-bottom: 2px solid lightgray;
+}
+}
